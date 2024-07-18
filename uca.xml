@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This is a list of possible Thunar Custom Actions, using established programs, compiled by https://github.com/duyfken.
+They are examples and you may not need all of them or may need to tweak them for your distribution. 
+Drop this file into ~/.config/Thunar/ or grab an action segment and drop it in your ~/.config/Thunar/uca.xml to activate them on your system.
+-->
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal here</name>
+	<submenu></submenu>
+	<unique-id>1664173630901911-1</unique-id>
+	<command>x-terminal-emulator --working-directory=%f</command>
+	<description>Open a terminal in the selected directory</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>folder</icon>
+	<name>Open Thunar as root here</name>
+	<submenu></submenu>
+	<unique-id>1665821504561824-4</unique-id>
+	<command>pkexec thunar %f</command>
+	<description>Open the selected directory as root in Thunar</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>accessories-text-editor</icon>
+	<name>Edit as root</name>
+	<submenu></submenu>
+	<unique-id>1711958560105116-1</unique-id>
+	<command>pkexec mousepad %f</command>
+	<description>Edit file as root with Mousepad</description>
+	<range></range>
+	<patterns>*</patterns>
+	<other-files/>
+	<text-files/>
+</action>
+<action>
+	<icon>new-audio-alarm</icon>
+	<name>Play with Deadbeef</name>
+	<submenu></submenu>
+	<unique-id>1665821421602834-2</unique-id>
+	<command>deadbeef %F</command>
+	<description>Play the selected audio files for playback in Deadbeef</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+</action>
+<action>
+	<icon>new-audio-alarm</icon>
+	<name>Enqueue in Deadbeef</name>
+	<submenu></submenu>
+	<unique-id>1665821452906271-3</unique-id>
+	<command>deadbeef --queue %F</command>
+	<description>Enqueue the selected audio files for playback in Deadbeef</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+</action>
+<action>
+	<icon>emblem-information</icon>
+	<name>Mediainfo</name>
+	<submenu></submenu>
+	<unique-id>1711950619202616-2</unique-id>
+	<command>x-terminal-emulator -e bash -c &quot;mediainfo %F; echo;read -n 1 -s -r -p &apos;Press any key to close.&apos;&quot;</command>
+	<description>Get the mediainfo of selected file/s</description>
+	<range></range>
+	<patterns>*</patterns>
+	<audio-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>package-x-generic</icon>
+	<name>Extract Here</name>
+	<submenu></submenu>
+	<unique-id>1406927955138667-14</unique-id>
+	<command>xarchiver --extract %F</command>
+	<description>Extract archive without dialogs using Xarchiver</description>
+	<range></range>
+	<patterns>*.7z;*.zip;*.ZIP;*.rar;*.RAR;*.iso;*.ISO;*.r0*;*.R0*;*.*01;*.tar;*.TAR;*.gz;*.GZ;*.tar.bz2;*.TAR.BZ2;*.gzip;*.GZIP;*tar.gz;*TAR.GZ;*tar.xz;*TAR.XZ;*tar.lz;*TAR.LZ;*.tgz</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>package-x-generic</icon>
+	<name>Compress</name>
+	<submenu></submenu>
+	<unique-id>1406927957138869-14</unique-id>
+	<command>xarchiver --compress=%F</command>
+	<description>Compress selected file/s into an archive using Xarchiver</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>gtkhash</icon>
+	<name>Checksum</name>
+	<submenu></submenu>
+	<unique-id>1479219991020421-1</unique-id>
+	<command>gtkhash %f</command>
+	<description>Get checksum of the selected file using GTKHash</description>
+	<range></range>
+	<patterns>*</patterns>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>catfish</icon>
+	<name>Search with Catfish</name>
+	<submenu></submenu>
+	<unique-id>1665821360522885-1</unique-id>
+	<command>catfish %f</command>
+	<description>Search the selected directory in Catfish</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>org.gnome.baobab</icon>
+	<name>Disk Usage</name>
+	<submenu></submenu>
+	<unique-id>1629596605486171-1</unique-id>
+	<command>x-terminal-emulator -e ~/dua i</command>
+	<description>Check disk usage of the directory, using dua binary (that resides in the user&apos;s home directory)</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>emblem-symbolic-link</icon>
+	<name>Create symlink</name>
+	<submenu></submenu>
+	<unique-id>1633511628120021-1</unique-id>
+	<command>ln -Ts %f %n&quot; (symlink)&quot;</command>
+	<description>Create symlink of the selected file/directory next to the original</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<other-files/>
+</action>
+<action>
+	<icon>distributor-logo-debian</icon>
+	<name>Install package with APT</name>
+	<submenu></submenu>
+	<unique-id>1686298669691492-1</unique-id>
+	<command>x-terminal-emulator -e bash -c &quot;sudo apt install %F; echo;read -n 1 -s -r -p &apos;Press any key to close.&apos;&quot;</command>
+	<description>Install a Debian package using APT</description>
+	<range>*</range>
+	<patterns>*.deb</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>user-trash</icon>
+	<name>Shred securely</name>
+	<submenu></submenu>
+	<unique-id>1681377439900829-1</unique-id>
+	<command>x-terminal-emulator -e bash -c &quot;shred -fvu %F; echo;read -n 1 -s -r -p &apos;Press any key to close.&apos;&quot;</command>
+	<description>Use shred to delete a file or a folder</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>org.gnome.Meld</icon>
+	<name>Compare</name>
+	<submenu></submenu>
+	<unique-id>1687698388436156-1</unique-id>
+	<command>sudo meld %F</command>
+	<description>Compare files using Meld</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<other-files/>
+	<text-files/>
+</action>
+</actions>
+
