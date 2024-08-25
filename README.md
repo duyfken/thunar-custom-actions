@@ -1,10 +1,10 @@
 This is a list of possible Thunar Custom Actions, using established programs.
 
-They are examples and you may not need all of them or may need to tweak them for your distribution.
+They are examples and you may not need all of them or may need to tweak them for your distribution. APT for DNF, Mousepad for xed, GTKHash for sha1sum... you get the drift, adjust accordingly.
 
-Drop the [uca.xml](https://github.com/duyfken/thunar-custom-actions/blob/main/uca.xml) file into `~/.config/Thunar/`, or grab an action segment and drop it in your `~/.config/Thunar/uca.xml` to activate them on your system.
+Drop the [uca.xml](https://github.com/duyfken/thunar-custom-actions/blob/main/uca.xml) file into `~/.config/Thunar/`, or grab an action segment and drop it in your pre-existing `~/.config/Thunar/uca.xml` to activate them on your system.
 
-Most actions are specific to certain files/folders etc. in the [uca.xml](https://github.com/duyfken/thunar-custom-actions/blob/main/uca.xml) but that info. is not visible below.
+Most actions are specific to certain filetypes or folders etc. in the [uca.xml](https://github.com/duyfken/thunar-custom-actions/blob/main/uca.xml) but that info. is not visible below.
 
 | Action  | Command | Description
 | ------------- | ------------- | ------------- |
